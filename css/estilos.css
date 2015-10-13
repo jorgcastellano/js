@@ -1,0 +1,20 @@
+* {
+   margin:0;
+   padding:0
+}
+html, body, #cajon {
+   height: 100%;
+}
+body > #cajon {
+   height: auto;
+   min-height: 100%;
+}
+#contenido {
+   padding-bottom: 50px; /* Mis altura que el footer */
+} 
+#footer {
+   position: relative;
+   margin-top: -50px; /* Misma altura que el footer en negativo */
+   height: 50px; /* Altura del footer */
+   clear: both;
+}
