@@ -1,26 +1,22 @@
 function numero_secreto(){
-    //Numero maximo
-    var max = 11;
     //numero minimo
     var min = 1;
+    //Numero maximo
+    var max = 10;
 
-    var numero_secreto = Math.random() * max;
-    var numero_secreto = parseInt(numero_secreto);
-
-    if (numero_secreto == 0) {
-      numero_secreto = 1;
-    }
+    var numero_secreto = Math.round(Math.random() * ((max + 0.4) - (min - 0.5)) + (min - 0.5));
     console.log(numero_secreto);
 
     var mensaje = "Ingresa un número para adivinar el número secreto";
+    var ni = 0;
 
     while(true){
-      
-        var numero_del_usuario = prompt(mensaje);
-        numero_del_usuario = parseInt(numero_del_usuario);
+        ni++;
+        var numero_del_usuario = parseInt(prompt(mensaje));
 
         if(numero_del_usuario === numero_secreto){
-            alert("Ganasteeee!! Adivinaste el número secreto");
+            mensaje = "Ganasteeee!! Adivinaste el número secreto\nRequeriste de " + ni + " intentos";
+            alert(mensaje);
             break;
         }
         else if(numero_del_usuario === 0){
