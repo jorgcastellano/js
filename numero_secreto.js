@@ -1,6 +1,6 @@
 function numero_secreto(){
     //Numero maximo
-    var max = 10;
+    var max = 11;
     //numero minimo
     var min = 1;
 
