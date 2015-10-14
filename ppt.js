@@ -53,7 +53,6 @@ function ppt(){
 		else {
 			mensaje = "Dato inválido, intentelo de nuevo\n"+leyenda;
 		}
-		cpu 
 	}
 	if (cpu === 3) {
 		alert("La computadora ha ganado\nUsuario " + jugador + " - " + cpu + " Computadora\n");
