@@ -56,7 +56,7 @@ function ppt(){
 		cpu 
 	}
 	if (cpu === 3) {
-		alert("Ganador computadora\nUsuario " + jugador + " - " + cpu + " Computadora\n");
+		alert("La computadora ha ganado\nUsuario " + jugador + " - " + cpu + " Computadora\n");
 	} else if (jugador === 3) {
 		alert("¡Felicidades has ganado!\nUsuario " + jugador + " - " + cpu + " Computadora\n");
 	}
