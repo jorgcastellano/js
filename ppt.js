@@ -44,7 +44,7 @@ function ppt(){
 			mensaje = "Gana computadora con tijera contra papel\n"+leyenda;
 			cpu++;
 		}
-		else if (cpu == 3 && usuario == 3) {
+		else if (numero == 3 && usuario == 3) {
 			mensaje = "Empate con tijera cada uno\n"+leyenda;
 		}
 		else if (usuario == 0){
