@@ -12,7 +12,7 @@ function winner(){
 }
 
 function loser(){
-	alert ("Lamentablemente has perdido, vuelvelo a intentar");
+	alert ("Lamentablemente has perdido, intenta de nuevo");
 }
 function campo_minado() {
 
