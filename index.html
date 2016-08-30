@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Numero secreto</title>
+	<title>Mini-juegos en JavaScript</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -22,9 +22,8 @@
 					<p>Adivina el número secreto y colocalo en la ventana que se despliega</p>
 					<p>El rango de los números es del uno (1) al diez (10)</p>
 					<p>Coloca cero (0) si quieres terminar el juego</p>
-					<script type="text/javascript" src="numero_secreto.js"></script>
 
-					<button type="button" onclick="numero_secreto()" name="jugar" class="btn btn-primary">Comenzar</button>
+					<button type="button" onclick="numero_secreto()" name="jugar" class="btn btn-primary">¡Comenzar!</button>
 
 				</div>
 				<div class="col-sm-6 text-center">
@@ -33,9 +32,24 @@
 					<p>Es un juego de manos en el cual existen tres elementos. La piedra que vence a la tijera rompiéndola, la tijera que vencen al papel cortándolo, y el papel que vence a la piedra envolviéndola</p>
 					<p>En este caso jugaras contra la computadora indicando con un numero la opción a elegir</p>
 					<p>Coloca cero (0) si quieres terminar el juego</p>
-					<script type="text/javascript" src="ppt.js"></script>
 
-					<button type="button" class="btn btn-primary" name="ppt" onclick="ppt()">Comenzar</button>
+					<button type="button" class="btn btn-primary" name="ppt" onclick="ppt()">¡Comenzar!</button>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h2>Juego Campo Minado</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>El rango del campo minado es de 10 por 10, iniciando desde cero (0) hasta nueve (9)</p>
+					<p>Acierta 3 campos a salvo en 5 intentos y ganaras la partida</p>
+
+					<button type="button" onclick="campo_minado()" name="minas" class="btn btn-primary">¡Comenzar!</button>
 
 				</div>
 			</div>
@@ -46,6 +60,9 @@
 			<h4  id="espacio" class="bg-primary no-margin">@jorgcastellano</h4>
 		</div>
 	</footer>
+	<script type="text/javascript" src="js/numero_secreto.js"></script>
+	<script type="text/javascript" src="js/ppt.js"></script>
+	<script type="text/javascript" src="js/minas.js"></script>
 	<script type="text/javascript" src="css/bootstrap/js/jquery.min.js"></script>
 	<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
 </body>
