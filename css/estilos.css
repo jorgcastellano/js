@@ -4,10 +4,15 @@
 }
 html, body, #cajon {
    height: 100%;
+   margin: 0;
+   padding: 0;
 }
 body > #cajon {
    height: auto;
    min-height: 100%;
+}
+#espacio {
+   padding: 15px 0 15px 0;
 }
 #contenido {
    padding-bottom: 50px; /* Mis altura que el footer */
@@ -17,4 +22,12 @@ body > #cajon {
    margin-top: -50px; /* Misma altura que el footer en negativo */
    height: 50px; /* Altura del footer */
    clear: both;
+}
+.container-fluid {
+   padding: 0;
+   margin: 0;
+   width: 100;
+}
+.no-margin {
+   margin: 0;
 }
