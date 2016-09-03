@@ -1,20 +1,22 @@
 function acierto() {
-	document.write ('<!DOCTYPE html><html lang="es"><head><title>Mini-juegos en JavaScript</title><meta charset="UTF-8"><link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css"><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" type="text/css" href="css/estilos.css"></head><body><div id="cajon"><header><div class="container-fluid"><h1 id="espacio" class="text-center bg-primary no-margin">Mis juegos con JavaScript</h1></div></header><div class="container" id="contenido"><div class="row"><div class="col-xs-12 text-center"><h2>Juego Campo Minado</h2><p>¡Excelente! Has pisado cesped <b>=D </b></p></div></div></div></div><footer><div class="container-fluid text-center" id="footer"><h4 id="espacio" class="bg-primary no-margin">@jorgcastellano</h4></div></footer><script type="text/javascript" src="css/bootstrap/js/jquery.min.js"></script><script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script></body></html>');
+	accion.textContent = "¡Excelente! Has pisado cesped";
 }
 
 function explosion(){
+	accion.textContent = "Has Pisado una mina";
 	alert ("¡BOOOOMM!");
-	document.write ('<!DOCTYPE html><html lang="es"><head><title>Mini-juegos en JavaScript</title><meta charset="UTF-8"><link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css"><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" type="text/css" href="css/estilos.css"></head><body><div id="cajon"><header><div class="container-fluid"><h1 id="espacio" class="text-center bg-primary no-margin">Mis juegos con JavaScript</h1></div></header><div class="container" id="contenido"><div class="row"><div class="col-xs-12 text-center"><h2>Juego Campo Minado</h2><p>Pisaste un campo minado <b>=( </b></p></div></div></div></div><footer><div class="container-fluid text-center" id="footer"><h4 id="espacio" class="bg-primary no-margin">@jorgcastellano</h4></div></footer><script type="text/javascript" src="css/bootstrap/js/jquery.min.js"></script><script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script></body></html>');
 }
 
 function winner(){
-	alert ("Felicidades, has ganado la partida!");
+	accion.textContent = "Felicidades, has ganado la partida!";
 }
 
 function loser(){
-	alert ("Lamentablemente has perdido, intenta de nuevo");
+	accion.textContent = "Lamentablemente has perdido, intenta de nuevo";
 }
 function campo_minado() {
+
+	//botonMinas.textContent = ""
 
 	//0 Cesped, 1 Bomba
 	var campo = [ 	[ 0, 1, 1, 0, 0],
@@ -30,7 +32,7 @@ function campo_minado() {
 	alert (	"Estás en un campo minado\n" +
 			"Ingrese la posición del campo a elegir (valores entre 0 y 4)");
 
-	while (intentos < 5 || aciertos == 3) {
+	while ((aciertos == 3) || (intentos < 5)) {
 		x = prompt ("Posicion X: ");
 		y = prompt ("Posicion Y: ");
 
@@ -55,6 +57,7 @@ function campo_minado() {
 		intentos++;
 		if (intentos == 5) {
 			loser();
+			accion.textContent = "La partida ha finalizado";
 		}
 	}
 }
