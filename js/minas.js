@@ -32,7 +32,7 @@ function campo_minado() {
 	alert (	"Estás en un campo minado\n" +
 			"Ingrese la posición del campo a elegir (valores entre 0 y 4)");
 
-	while ((aciertos == 3) || (intentos < 5)) {
+	while ((aciertos != 3) && (intentos < 5)) {
 		x = prompt ("Posicion X: ");
 		y = prompt ("Posicion Y: ");
 

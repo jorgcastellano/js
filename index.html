@@ -42,32 +42,29 @@
 			<div class="row">
 				<div class="col-sm-6 text-center">
 					<h2>Juego Campo Minado</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>El rango del campo minado es de 10 por 10, iniciando desde cero (0) hasta nueve (9)</p>
+					<p>¡Estas en un campo minado!, el rango del campo minado es de 5 por 5, iniciando desde cero (0) hasta cuatro (4)</p>
 					<p>Acierta 3 campos a salvo en 5 intentos y ganaras la partida</p><br>
 
-					<p><b id="accion">¡Comieza ahora!</b></p><br>
+					<p><b id="accion">¡Comieza ahora!</b></p>
+
 					<div id="botonMinas">
 						<button type="button" onclick="campo_minado()" name="minas" class="btn btn-primary">¡Comenzar!</button>
 					</div>
 
 				</div>
 				<div class="col-sm-6 text-center">
-					<h2>Pokemon</h2>
-					<p>Ejecicio orientado a objetos</p>
+					<h2>Pokemones</h2>
+					<p>Ejercicio orientado a objetos</p>
 
-					<p>Seleccion el Poke ball a inspeccionar</p>
+					<p>Seleccion la Pokebola a inspeccionar</p>
 
-					<button type="button" onclick="juegoPoke(1)" name="pokemon" class="btn btn-primary">Poke ball 1</button>
-					<button type="button" onclick="juegoPoke(2)" name="pokemon" class="btn btn-primary">Poke ball 2</button>
-					<button type="button" onclick="juegoPoke(3)" name="pokemon" class="btn btn-primary">Poke ball 3</button>
+					<button type="button" onclick="juegoPoke(1)" name="pokemon" class="btn btn-primary">Pokebola 1</button>
+					<button type="button" onclick="juegoPoke(2)" name="pokemon" class="btn btn-primary">Pokebola 2</button>
+					<button type="button" onclick="juegoPoke(3)" name="pokemon" class="btn btn-primary">Pokebola 3</button>
 
-					<div id="resultadoPoke"></div>
+					<div id="resultadoPoke">
+						<br> <img src="imgs/pokebola.png" width="200px">
+					</div>
 
 				</div>
 			</div>
@@ -75,7 +72,7 @@
 	</div>
 	<footer>
 		<div class="container-fluid text-center" id="footer">
-			<h4  id="espacio" class="bg-primary no-margin">@jorgcastellano</h4>
+			<h4  id="espacio" class="bg-primary no-margin"><a href="http://www.jorgcastellano.xyz" target="_blank" style="color: white; text-decoration: none">@jorgcastellano</a> - 2016</h4>
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/numero_secreto.js"></script>
